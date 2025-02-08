@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel SALEM - Votre oasis de luxe</title>
+   <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Boxicons CSS -->
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="imagelogo.jpg " alt="logo"> </a>
+            <div class="logo">Hôtel SALEM</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#chambres">Chambres</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+
+        <section id="chambres">
+            <h2>Nos Chambres de Luxe</h2>
+            <div class="room-grid">
+                <div class="room">
+                    <img src="imagechambrelit2.jpg" alt="">
+                    <h3>chambre luxueuse</h3>
+                    <p>Profitez d'un séjour inoubliable dans notre chambre luxueuse.</p>
+                </div>
+                <div class="room">
+                    <img src="imageclimatise.jpg" alt="Chambre climatise">
+                    <h3>Chambre Climatise</h3>
+                    <p>Une expérience de confort supérieur vous attend.</p>
+                </div>
+                <div class="room">
+                    <img src="imagesuitestandar.jpg" alt="Suite standar">
+                    <h3>Suite standar</h3>
+                    <p>Espace et confort pour votre sejour.</p>
+                </div>
+                <div class="room">
+                    <img src="imageaccueil.jpg" alt="accueil">
+                    <h3>Accueil</h3>
+                </div>
+                <div class="room">
+                    <img src="imagechambrelit3.jpg" alt="Chambre spacieuse">
+                    <h3>chambre Spacieuse</h3>
+                    <p>Espace et confort pour votre sejour.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Nos Services</h2>
+            <ul>
+                <li>Restaurant gastronomique</li>
+                <li>WIFI Gratuit </li>
+                <li>Service en chambre 24/7</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>Hôtel SALEM, Agboville</p>
+            <p>Numéro: +2250759822511</p>
+            <p>Email : contact@hotel-salem.com</p>
+        </section>
+    </main>
+        <!-- Services Section -->
+        <section id="services" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Nos Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-cup-hot fs-2 me-3"></i>
+                            <span>Restaurant gastronomique</span>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-person-check fs-2 me-3"></i>
+                            <span>Service de conciergerie 24/7</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-wifi fs-2 me-3"></i>
+                            <span>Wifi gratuit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeIn">Contactez-nous</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <h4>Informations de contact</h4>
+                    <p><i class="bi bi-telephone me-2"></i></p>
+                    <a href="https://www.google.com/maps?q=5.950458102809945,-4.192509968016795" class="btn btn-info">Voir sur Google Maps</a>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <!-- Formulaire de contact ou autres informations -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Google Maps Section -->
+    <section id="location" class="mt-5">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeIn">Localisation</h2>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+        </div>
+    </section>
+    <script>
+        function initMap() {
+            var location = {lat:5.950458102809945, lng:-4.192509968016795};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+        </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3kcFFCT3aTxr_HgkIyvBHOiSxGE7wZwE&callback=initMap"></script>
+        </body>
+        
+    <footer>
+        <div class="lien">
+            <ul>
+                <li><a href="https://wa.me/+2250759822511"><i class='bx bxl-whatsapp'></i></a></li>
+                <li><a href="https://www.facebook.com/SalemHotelAgboville/"><i class='bx bxl-facebook'></i></a></li>
+            </ul>
+        </div> 
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hôtel SALEM. Tous droits réservés.</p>
+        </div>      
+    </footer>
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script src="humberger.js"></script>
+</html>
+
