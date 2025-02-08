@@ -1,0 +1,409 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+.hero-section {
+    background: url('imagelogo.jpg') no-repeat center center/cover;
+    color:#1A2A3A;
+    padding: 100px 0;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+:root {
+    --salem-orange: white;
+    --salem-red: #C81D25;
+    --salem-blue:#1A2A3A;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--salem-blue);
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: var(--salem-blue);
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--salem-orange);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--salem-orange);
+}
+
+main {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 20px;
+}
+
+.hero {
+    background-image: url('hotel-exterior.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--salem-red);
+    margin-bottom: 20px;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.room {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.room:hover {
+    transform: translateY(-5px);
+}
+
+.room img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room h3 {
+    color: var(--salem-red);
+    padding: 10px;
+}
+
+.room p {
+    padding: 0 10px 10px;
+}
+
+#services ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#services li {
+    margin-bottom: 10px;
+}
+
+#services li::before {
+    content: "•";
+    color: var(--salem-orange);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+footer {
+    background-color: var(--salem-blue);
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.lien ul li a.facebook {
+    color: #3b5998; /* Bleu pour Facebook */
+}
+
+.lien ul li a.facebook:hover {
+    color: #2d4373; /* Couleur survolée pour Facebook */
+}
+ .lien ul li a.whatsapp{
+    color: #25d366;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+ }
+ .lien ul li a.whatsapp:hover{
+    color: #25d366;
+    background-color: #128C7E;
+    transform: scale(1.1);
+ }
+
+
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--salem-orange);
+}
+
+
+
+.whatsapp-icon {
+    margin-top: 4px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .room-grid {
+        grid-template-columns: 1fr;
+    }
+
+   
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+   }
+
+   .hero {
+    background-image: url('imagelogo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1A2A3A;
+    padding: 0 20px;
+}
+#services ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#services li {
+    margin-bottom: 10px;
+}
+
+#services li::before {
+    content: "•";
+    color: var(--salem-orange);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Aligner le logo à gauche et les liens à droite */
+    align-items: center; /* Centrer verticalement le logo et les liens */
+    padding: 10px; /* Ajouter un espace autour du contenu de la barre de navigation */
+  }
+  
+  .logo img {
+    height: 50px; /* Définir la hauteur du logo */
+  }
+  
+  nav ul {
+    list-style: none; /* Supprimer les puces de la liste */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline; /* Afficher les éléments de la liste horizontalement */
+    margin-right: 20px; /* Ajouter un espace entre les éléments de la liste */
+  }
+  footer{
+    position: relative;
+    bottom: 0;
+    padding: 40px 0;
+    text-align: center;
+    color:white;
+}
+footer .lien ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer .lien ul li {
+    height: 42px;
+    width: 42px;
+    line-height: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    background: linear-gradient(to right, #00ff37, #0059ff);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .lien ul li:hover {
+
+    transform: scale(1.05);
+}
+
+footer .lien ul li a i {
+    font-size: 15px;
+    color:black;
+}
+
+@media (max-width:1285px){
+
+}
+@media (max-width:991px){
+    .apropos, .menu, .contact{
+        padding-block: 5rem ;
+    }
+    .apropos .container,
+    .contact .container{
+        margin: 0 6rem 0 6rem;
+    }
+    .apropos .container{
+        flex-wrap: wrap;
+    }
+    .apropos .container .image-container{
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+    .apropos .container .text-container{
+        margin: auto;
+        width: 400px;
+        text-align: center;
+    }
+    .menu h1{
+        margin-left: 6rem;
+    }
+    .menu .container{
+        margin: 0 6rem 0 6rem;  
+    }
+    .contact .container .text-container .lien ul{
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width:895px){
+    #menu-icon{
+        display: block;
+        z-index: 1001;
+      }
+      header .navbar {
+        position: absolute;
+        top:100%;
+        right:0;
+        width:50%;
+        padding: 1rem 3%;
+        background: linear-gradient(to left,#ff0000,#ff8800);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius:2rem;
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        display: none;
+          }
+    }
